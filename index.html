@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="baidu-site-verification" content="kBRZf7l0H8" />
+  <title>海棠学院 - WEB前端学习新体验</title>
+  <meta name="keywords" content="海棠学院,海棠,海棠优学,海棠网,海棠网校,apeclass,web前端，web前端开发，web前端培训，web前端培训机构，web前端学习，web前端在线学习，web前端工程师" />
+  <meta name="description" content="海棠学院，简单可依赖的优质课程，90%学员口碑而来。课程涵盖html,css,html5,css3,jquery,javascript,zepto,angular,react，vue，node等" />
+
+  <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" media="screen" />
+
+
+  <link href="./assets/libs/bootstrap.css" rel="stylesheet" />
+
+  <link rel="stylesheet" media="screen" href="./assets/css/common.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/es-icon.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/haitang.css">
+
+  <link href="./assets/css/main.css" rel="stylesheet" />
+
+  <script src="./assets/libs/jquery.min.js"></script>
+
+</head>
+
+<body class="homepage">
+
+  <div class="es-wrap">
+
+    <div class="alert alert-warning alert-notice announcements-alert hidden-xs" role="alert">
+      <div class="container swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <i class="es-icon es-icon-infooutline mrm"></i>
+            本站维护更新中，具体事宜请联系 微信：653754835
+          </div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+    </div>
+    <header id="ht-header" class="es-header navbar test-header headroom">
+      <div class="navbar-header">
+        <div class="visible-xs  navbar-mobile">
+          <a href="javascript:;" class="navbar-more js-navbar-more">
+            <i class="es-icon es-icon-menu"></i>
+          </a>
+          <div class="html-mask"></div>
+          <div class="nav-mobile">
+            <ul class="nav navbar-nav">
+
+              <li class="">
+                <a href="./index.html">首页 </a>
+              </li>
+              <li class="">
+                <a href="./course/list.html">前端课程 </a>
+              </li>
+              <li class="">
+                <a href="./nodeJs/nodejs.html">Node全栈 </a>
+              </li>
+              <li class="">
+                <a href="/article/61">开班信息 </a>
+              </li>
+              <li class="">
+                <a href="/article/51">公开课 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="/" class="navbar-brand">
+          <img src="./assets/img/logo-t.png">
+        </a>
+      </div>
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+          <li class="">
+            <a href="./index.html">首页 </a>
+          </li>
+          <li class="">
+            <a href="./course/list.html">前端课程 </a>
+          </li>
+          <li class="">
+            <a href="./nodeJs/nodejs.html">Node全栈 </a>
+          </li>
+          <li class="">
+            <a href="/article/61">开班信息 </a>
+          </li>
+          <li class="">
+            <a href="/article/51">公开课 </a>
+          </li>
+        </ul>
+        <div class="navbar-user ">
+          <ul class="nav user-nav">
+            <li class="user-avatar-li nav-hover">
+              <a href="javascript:;" class="dropdown-toggle">
+                <img class="avatar-xs" src="./assets/temp/img/124059bdc7ec532654.jpg">
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">王师兄0214</li>
+                <li><a href="/user/869"><i class="es-icon es-icon-person"></i>个人主页</a>
+                </li>
+                <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a>
+                </li>
+                <li class="hidden-lg">
+                  <a href="/my">
+                    <i class="es-icon es-icon-eventnote"></i>我的学习 </a>
+                </li>
+                <li><a href="/my/bill"><i class="es-icon es-icon-accountwallet"></i>账户中心</a>
+                </li>
+
+                <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a>
+                </li>
+                <li class="hidden-lg"><a href="/message/"><span class="pull-right num"></span><i class="es-icon es-icon-mail"></i>私信</a>
+                </li>
+                <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a>
+                </li>
+              </ul>
+            </li>
+            <li class="visible-lg">
+              <a href="/my">
+                我的学习
+              </a>
+            </li>
+            <li class="visible-lg nav-hover">
+
+              <a><i class="es-icon es-icon-mail"></i></a>
+
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/notification">
+                    <span class="pull-right num"></span>
+                    <i class="es-icon es-icon-notificationson"></i>通知
+                  </a>
+                </li>
+                <li>
+                  <a href="/message/">
+                    <span class="pull-right num"></span>
+                    <i class="es-icon es-icon-mail"></i>私信
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+                <div class="form-group">
+                    <input class="form-control js-search" name="q" placeholder="搜索">
+                    <button class="button es-icon es-icon-search"></button>
+                </div>
+            </form> -->
+        </div>
+      </nav>
+    </header>
+
+    <script src="./assets/libs/three.min.js"></script>
+    <!-- videojs -->
+    <div class="video-mask">
+      <div class="mask-1"></div>
+      <div class="video-container"></div>
+      <!-- <img class="video-close" src="img/close.png"> -->
+      <!-- <span>x</span> -->
+    </div>
+    <!-- container start -->
+    <div id="particles">
+      <canvas width="1440" height="209" style="width: 100%; height: 209px;" class="__web-inspector-hide-shortcut__"></canvas>
+      <div class="intro">
+        <h1>高级WEB前端精品小班</h1>
+        <p>从今天起，跟BAT大牛一起做一点改变</p>
+        <a class="intro_a video_play" href="/course/27/lesson/list">开启试听</a>
+      </div>
+    </div>
+    <!-- banner1 -->
+    <section class="ht-section-center ht-lifecycle">
+      <div class="ht-section-inner">
+        <div class="ht-container">
+          <h2 class="ht-section-heading">以教学管理驱动的在线教育新模式</h2>
+          <p class="ht-section-sub-heading">优质课程质量，仅仅只是个开始</p>
+          <div class="course-list">
+            <div class="row">
+              <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn"
+                data-wow-duration="0.6s" data-wow-delay="0s">
+                <div class="course-item">
+                  <div class="course-img">
+                    <a href="./course/course.html" target="_blank">
+                      <span class="tags"><span class="tag-finished"></span></span>
+                      <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">正课试听-Web前端零基础入门</p>
+                      <img style="padding:0;" class="img-responsive" src="./assets/temp/img/18593357cda6239198.jpg" alt="正课试听-Web前端零基础入门 海棠学院 官网">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- over -->
+              <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn"
+                data-wow-duration="0.6s" data-wow-delay="0s">
+                <div class="course-item">
+                  <div class="course-img">
+                    <a href="./course/course.html" target="_blank">
+                      <span class="tags"><span class="tag-finished"></span></span>
+                      <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">正课试听-JS入门/基本语法和属性</p>
+                      <img style="padding:0;" class="img-responsive" src="./assets/temp/img/18593357cda6239198.jpg" alt="正课试听-JS入门/基本语法和属性 海棠学院 官网">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- over -->
+              <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn"
+                data-wow-duration="0.6s" data-wow-delay="0s">
+                <div class="course-item">
+                  <div class="course-img">
+                    <a href="./course/course.html" target="_blank">
+                      <span class="tags"><span class="tag-finished"></span></span>
+                      <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">公开课程-《canvas气泡+扇形导航》</p>
+                      <img style="padding:0;" class="img-responsive" src="./assets/temp/img/18593357cda6239198.jpg" alt="公开课程-《canvas气泡+扇形导航》海棠学院 官网">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- over -->
+              <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn"
+                data-wow-duration="0.6s" data-wow-delay="0s">
+                <div class="course-item">
+                  <div class="course-img">
+                    <a href="./course/course.html" target="_blank">
+                      <span class="tags"><span class="tag-finished"></span></span>
+                      <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">公开课程-《炫酷照片墙》</p>
+                      <img style="padding:0;" class="img-responsive" src="./assets/temp/img/18593357cda6239198.jpg" alt="公开课程-《炫酷照片墙》海棠学院">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- over -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner2 -->
+
+    <section class="ht-section-center workflow">
+      <div class="ht-section-inner">
+        <div class="ht-container">
+          <div class="ht-row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 v-align wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="centered">
+                <div data-videoId="0" class="ht-centered-inner play-videos">
+                  <img style="width:350px;" src="./assets/temp/img/teacher.png" alt="海棠学院 陈学辉">
+                </div>
+                <div data-videoId="0" class="player-icon"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 v-align wow fadeInLeft" data-wow-duration="1.2s"
+              data-wow-delay="0.5s">
+              <div class="context text-left">
+                <h3>听听讲师怎么说</h3>
+                <p>你看到的，你所认同的，在这里都将被实现。学习艰辛，我们一路同行</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner3 -->
+    <section class="ht-section-center turnover">
+      <div class="ht-section-inner">
+        <div class="ht-container">
+          <div class="ht-row">
+            <div class="col-xs-12 col-sm-6 v-align wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="centered">
+                <div data-videoId="1" class="ht-centered-inner play-videos">
+                  <img style="width:350px;" src="./assets/temp/img/assistant.jpg" alt="海棠学院">
+                  <div data-videoId="1" class="player-icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 v-align wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="context text-left">
+                <h3>助教老师的严格标准</h3>
+                <p>或许看上去不会那么"友善"，甚至略微苛刻，我们相信您也期待一个新的学习体验。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ht-section-center datacenter">
+      <div class="ht-section-inner">
+        <div class="ht-container">
+          <div class="ht-row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 v-align wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="centered">
+                <div data-videoId="2" class="ht-centered-inner play-videos">
+                  <img style="width:350px;" src="./assets/temp/img/students.jpg" alt="海棠学院">
+                  <div data-videoId="2" class="player-icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 v-align wow fadeInLeft" data-wow-duration="1.2s"
+              data-wow-delay="0.5s">
+              <div class="context text-left">
+                <h3>或许学员的反馈也不错</h3>
+                <p>没有慷慨且煽情的言语，甚至不连贯的语句也测证"剧本"的可信赖性。"简单可依赖"，不只是一句口号。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3d banner -->
+    <section class="works-container">
+      <h2 class="ht-section-heading">案例展示</h2>
+      <p class="ht-section-sub-heading">多年的积累，才会有今天的得心应手。真实的一线互联网线上案例，点点看哟~</p>
+      <div id="gla">
+        <div id="gla_box">
+          <ul>
+            <li class="wow flipInX" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="gla_inbox">
+                <p>百科数字博物馆</p>
+                <img src="./assets/temp/img/1.jpg" alt="海棠学院 学员" />
+                <a href="http://baike.baidu.com/museum/" target="_blank">
+                  跳转查看
+                </a>
+              </div>
+            </li>
+            <li class="wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="gla_inbox">
+                <p>城市百科</p>
+                <img src="./assets/temp/img/2.jpg" alt="海棠学院 学员" />
+                <a href="http://baike.baidu.com/city">
+                  跳转查看
+                </a>
+              </div>
+            </li>
+            <li class="wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="gla_inbox">
+                <p>
+                  百度手机助手
+                </p>
+                <img src="./assets/temp/img/3.jpg" alt="海棠学院 学员" />
+                <a href="http://mobile.baidu.com/">
+                  跳转查看
+                </a>
+              </div>
+            </li>
+            <li class="wow flipInY" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="gla_inbox">
+                <p>图虫</p>
+                <img src="./assets/temp/img/4.jpg" alt="海棠学院 学员" />
+                <a href="https://tuchong.com/">
+                  跳转查看
+                </a>
+              </div>
+            </li>
+            <li class="wow flipInX" data-wow-duration="1.2s" data-wow-delay="0.5s">
+              <div class="gla_inbox">
+                <p>
+                  汽车之友
+                </p>
+                <img src="./assets/temp/img/5.jpg" alt="海棠学院 学员" />
+                <a href="http://www.autofan.com.cn/">
+                  跳转查看
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- student start -->
+    <section class="student-section">
+      <h2 class="ht-section-heading">学生评价</h2>
+      <p class="ht-section-sub-heading">每一位学员都是一份责任，让我们一起同行</p>
+      <div class="student-show">
+        <div class="students">
+          <div id="stu-con">
+            <div class="flashBg">
+              <ul class="mobile">
+                <li>
+                  <img src="./assets/temp/img/ht-tangmingqi.png" alt="海棠学院 学员" />
+                  <dd>唐铭琦</dd>
+                  <p>海棠的教学模式比较新颖，在线教育最难的就是学习进度的管理。加入海棠，我觉得物超所值</p>
+                  <a href="http://wpa.qq.com/msgrd&uin=1178887001&site=qq&menu=yes" target="_blank"></a>
+                </li>
+                <li>
+                  <img src="./assets/temp/img/ht-tangmingqi.png" alt="海棠学院 学员" />
+                  <dd>王宁</dd>
+                  <p>现就职于深圳某互联网公司<br />在海棠我用了4个月就收获了一份不错的工作，特别感谢陈学辉老师</p>
+                  <a href="http://wpa.qq.com/msgrd&uin=1178887001&site=qq&menu=yes" target="_blank"></a>
+                </li>
+                <li>
+                  <img src="./assets/temp/img/ht-tangmingqi.png" alt="海棠学院 学员" />
+                  <dd>陈帆</dd>
+                  <p>现就职某游戏公司<br />百度背景的讲师确实不一样,零碎的知识也能讲出非常体系的课程</p>
+                  <a href="http://wpa.qq.com/msgrd&uin=1178887001&site=qq&menu=yes" target="_blank"></a>
+                </li>
+                <!-- <li>
+                                <img src="./assets/v2/img/haitang/ht-zhangxuejun.png" />
+                                <dd>张学军</dd>
+                                <p>学辉老师的课很不错，能把复杂的知识讲解的浅显易懂，非常适合像我这种基础薄弱的学生</p>
+                                <a href="javascript:void(0);"></a>
+                            </li>
+                            
+                            <li>
+                                <img src="./assets/v2/img/haitang/ht-songxijia.png" />
+                                <dd>宋西佳</dd>
+                                <p>互联网IT教育北京的公司还是有些独到的优势的，对比下来，最终选择了海棠。</p>
+                                <a href="javascript:void(0);"></a>
+                            </li>
+                            <li>
+                                <img src="./assets/v2/img/haitang/ht-yuqun.png" />
+                                <dd>于群</dd>
+                                <p>虽然自己比别人慢半拍，我还是顺利完成了课程。现在一家创业公司，我很满意</p>
+                                <a href="javascript:void(0);"></a>
+                            </li> -->
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- student over -->
+
+    <!-- container over -->
+
+    <script src="./assets/libs/index-canvas.js"></script>
+    <script src="./assets/libs/haitang.js"></script>
+
+
+
+
+    <!-- 小组动态 -->
+    <section class="dynamic-section  pt0">
+      <div class="container">
+        <div class="text-line gray">
+          <h5><span>动态</span>
+            <div class="line"></div>
+          </h5>
+          <div class="subtitle">参与小组，结交更多同学，关注课程动态。</div>
+        </div>
+        <div class="dynamic-section-main row">
+          <div class="col-md-6 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="0.5">
+            <div class="panel panel-default index-article">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  最新资讯
+                  <a class="more" href="/article"><i class="es-icon es-icon-morehoriz"></i></a>
+                </h3>
+              </div>
+              <div class="panel-body clearfix">
+                <ul class="index-new-article full">
+                  <li class=" clearfix"><i class="es-icon es-icon-dot color-primary mrs"></i><a class="link-dark" href="/article/269"
+                      title="【Node全栈工程师高阶班】招生啦~">【Node全栈工程师高阶班】招生啦~</a>
+
+
+
+                  </li>
+                  <li class=" clearfix"><i class="es-icon es-icon-dot color-primary mrs"></i><a class="link-dark" href="/article/268"
+                      title="【转载】如何验证 Email 地址：SMTP 协议入门教程">【转载】如何验证 Email 地址：SMTP 协议入门教程</a>
+
+
+
+                  </li>
+                  <li class=" clearfix"><i class="es-icon es-icon-dot color-primary mrs"></i><a class="link-dark" href="/article/267"
+                      title="海棠学院【移动端开发+职业技能】大型公开课">海棠学院【移动端开发+职业技能】大型公开课</a>
+
+
+
+                  </li>
+                  <li class=" clearfix"><i class="es-icon es-icon-dot color-primary mrs"></i><a class="link-dark" href="/article/265"
+                      title="原生js发表说说功能">原生js发表说说功能</a>
+
+
+
+                  </li>
+                  <li class="last clearfix"><i class="es-icon es-icon-dot color-primary mrs"></i><a class="link-dark"
+                      href="/article/264" title="【转载】css实现的loading动画">【转载】css实现的loading动画</a>
+
+
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.5">
+            <div class="panel panel-default index-dynamic">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  学员动态
+                </h3>
+              </div>
+              <div class="panel-body">
+
+                <div class="media media-dynamic">
+                  <div class="media-left">
+                    <a class=" js-user-card" href="/user/5033" data-card-url="/user/5033/card/show" data-user-id="5033">
+                      <img class="avatar-sm" src="./assets/temp/img/160831f4f949946070.jpg">
+                    </a>
+
+                  </div>
+                  <div class="media-body">
+                    <div class="title">
+                      <a class="link-dark " href="/user/5033">ljw199152</a>
+
+                    </div>
+                    <div class="content">
+
+                      开始学习课时 <a class="link-dark" href="/course/25" title="来自《JS第二章-数据类型/作用域/流程控制》">34-局部作用域</a>
+
+                    </div>
+                    <span class="date">1天前</span>
+                  </div>
+                </div>
+                <div class="media media-dynamic">
+                  <div class="media-left">
+                    <a class=" js-user-card" href="/user/5350" data-card-url="/user/5350/card/show" data-user-id="5350">
+                      <img class="avatar-sm" src="./assets/temp/img/160831f4f949946070.jpg">
+                    </a>
+
+                  </div>
+                  <div class="media-body">
+                    <div class="title">
+                      <a class="link-dark " href="/user/5350">Rocky丶</a>
+
+                    </div>
+                    <div class="content">
+
+                      开始学习课时 <a class="link-dark" href="/course/44" title="来自《JS第十七章-react》">1-react简介</a>
+
+                    </div>
+                    <span class="date">2天前</span>
+                  </div>
+                </div>
+                <div class="media media-dynamic">
+                  <div class="media-left">
+                    <a class=" js-user-card" href="/user/1831" data-card-url="/user/1831/card/show" data-user-id="1831">
+                      <img class="avatar-sm" src="./assets/temp/img/160831f4f949946070.jpg">
+                    </a>
+
+                  </div>
+                  <div class="media-body">
+                    <div class="title">
+                      <a class="link-dark " href="/user/1831">陈雨微</a>
+
+                    </div>
+                    <div class="content">
+
+                      开始学习课时 <a class="link-dark" href="/course/46" title="来自《零基础第一章-Web前端零基础入门（免费）》">21-文本</a>
+
+                    </div>
+                    <span class="date">2天前</span>
+                  </div>
+                </div>
+                <div class="media media-dynamic">
+                  <div class="media-left">
+                    <a class=" js-user-card" href="/user/1831" data-card-url="/user/1831/card/show" data-user-id="1831">
+                      <img class="avatar-sm" src="./assets/temp/img/160831f4f949946070.jpg">
+                    </a>
+
+                  </div>
+                  <div class="media-body">
+                    <div class="title">
+                      <a class="link-dark " href="/user/1831">陈雨微</a>
+
+                    </div>
+                    <div class="content">
+
+                      学完了课时 <a class="link-dark" href="/course/46" title="来自《零基础第一章-Web前端零基础入门（免费）》">20-检测多行文字行高以及文字...</a>
+
+                    </div>
+                    <span class="date">2天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <div class="es-friend-link">
+      <div class="container">
+        <div class="title">友情链接：</div>
+        <ul>
+          <li><a class="link-dark text-sm" href="http://www.ruanyifeng.com" target="_blank">阮一峰</a></li>
+          <li><a class="link-dark text-sm" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭</a></li>
+          <li><a class="link-dark text-sm" href="https://ke.qq.com/course/149980" target="_blank">腾讯课堂</a></li>
+          <li><a class="link-dark text-sm" href="http://www.chuanke.com/v7521771-188496-1055254.html" target="_blank">百度传课</a></li>
+          <li><a class="link-dark text-sm" href="http://study.163.com/course/courseMain.htm?courseId=1003225036" target="_blank">网易云课堂</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="es-footer-link">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8 footer-main clearfix">
+            <div class="link-item ">
+              <h3>Students</h3>
+              <ul>
+                <li>
+                  <a href="/course/27/lesson/list" target="_self">试听课程</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link-item ">
+              <h3>Teacher</h3>
+              <ul>
+                <li>
+                  <a href="/user/19/about" target="_self">讲师简介</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link-item ">
+              <h3>News</h3>
+              <ul>
+                <li>
+                  <a href="/article" target="_self">资讯频道</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link-item hidden-xs">
+              <h3>How</h3>
+              <ul>
+                <li>
+                  <a href="/article/61" target="_self">公开课</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link-item hidden-xs">
+              <h3>Questions</h3>
+              <ul>
+                <li>
+                  <a href="/article/11" target="_self">常见问题</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 footer-logo hidden-sm hidden-xs">
+            <a class="" href="http://www.apeclass.cn" target="_self">
+              <img src="./assets/temp/img/block_picture_1469698303.png" alt="建议图片大小为233*64">
+            </a>
+            <div class="footer-sns">
+              <a class="qrcode-popover top">
+                <i class="es-icon es-icon-weixin"></i>
+                <div class="qrcode-content">
+                  <img src="./assets/temp/img/block_picture_1469698303.png" alt="">
+                </div>
+              </a>
+              <a style="display:none;" class="qrcode-popover top">
+                <i class="es-icon es-icon-android"></i>
+                <div class="qrcode-content">
+                  <img src="./assets/temp/img/android.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <footer class="es-footer footer-test">
+      <div class="copyright">
+        <div class="container">
+          <div class="mts">
+            课程内容版权均归
+            <a href="/">
+              北京海棠优学教育科技有限公司
+            </a>
+            所有 <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+              京ICP备16058256号-1
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <div id="float-consult" class="float-consult hidden-xs">
+    <div class="btn-group-vertical">
+
+      <span class="btn btn-consult-default float-consult-qq-btn" data-container=".float-consult-qq-btn" data-title="QQ客服"
+        data-content-element="#consult-qq-content"><span class="icon icon-qq"></span></span>
+
+      <span class="btn btn-consult-default float-consult-qqgroup-btn" data-container=".float-consult-qqgroup-btn"
+        data-title="QQ群" data-content-element="#consult-qqgroup-content"><span class="icon icon-qqgroup"></span></span>
+
+      <span class="btn btn-consult-default float-consult-phone-btn" data-container=".float-consult-phone-btn"
+        data-title="电话客服" data-content-element="#consult-phone-content"><span class="icon icon-phone"></span></span>
+
+      <span class="btn btn-consult-default float-consult-weixin-btn" data-container=".float-consult-weixin-btn"
+        data-title="微信公众号" data-content-element="#consult-weixin-content"><span class="icon icon-weixin"></span></span>
+
+      <span class="btn btn-consult-default float-consult-email-btn" data-container=".float-consult-email-btn"
+        data-title="电子邮箱" data-content-element="#consult-email-content"><span class="icon icon-email"></span></span>
+    </div>
+
+    <div class="consult-contents">
+      <div id="consult-qq-content">
+        <p>
+          <a target="_blank" href="http://wpa.qq.com/msgrd&uin=723936083&site=qq&menu=yes">
+            <img class="mrs" src="./assets/temp/img/bar_qq.png" alt="" title="点击这里给我发消息" alt="">
+            海棠音符
+          </a>
+        </p>
+      </div>
+
+      <div id="consult-qqgroup-content">
+        <p>
+          <span class="icon icon-qqgroup text-muted" style="font-size:14px;"></span>
+          海棠学院-前端群
+          <br>
+          <p class="text-overflow">
+            496520459
+          </p>
+
+        </p>
+      </div>
+      <div id="consult-phone-content">
+        <p>
+          <strong>服务时间：</strong> 9:00 - 17:00
+        </p>
+
+        <p>
+          咨询： 010-57125477
+        </p>
+      </div>
+
+
+      <div id="consult-weixin-content">
+        <img src="./assets/temp/img/042111795ef3944439.jpg" class="qrcode center-block">
+      </div>
+
+      <div id="consult-email-content">
+        <a href="mailto:fe@apeclass.com">fe@apeclass.com</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="login-modal" class="modal" data-url="/login/ajax"></div>
+  <div id="modal" class="modal"></div>
+
+
+</body>
+<script src="./assets/libs/headroom/Headroom.js"></script>
+<script src="./assets/libs/headroom/jQuery.headroom.js"></script>
+<script src="./assets/libs/wow.js"></script>
+<script src="./assets/libs/jquery-browser.js"></script>
+<script src="./assets/libs/jquery.corner.js"></script>
+<script src="./assets/libs/jquery.roundabout.js"></script>
+<script src="./assets/libs/jquery.roundabout-shapes.js"></script>
+<script src="./assets/libs/ht-pages.js"></script>
+
+</html>

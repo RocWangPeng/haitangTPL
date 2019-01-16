@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="baidu-site-verification" content="kBRZf7l0H8" />
+  <title>海棠学院 - WEB前端学习新体验</title>
+  <meta name="keywords" content="海棠学院,海棠,海棠优学,海棠网,海棠网校,apeclass,web前端，web前端开发，web前端培训，web前端培训机构，web前端学习，web前端在线学习，web前端工程师" />
+  <meta name="description" content="海棠学院，简单可依赖的优质课程，90%学员口碑而来。课程涵盖html,css,html5,css3,jquery,javascript,zepto,angular,react，vue，node等" />
+
+  <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" media="screen" />
+
+
+  <link href="../assets/libs/bootstrap.css" rel="stylesheet" />
+
+  <link rel="stylesheet" media="screen" href="../assets/css/common.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/es-icon.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/haitang.css">
+
+  <link href="../assets/css/main.css" rel="stylesheet" />
+
+  <script src="../assets/libs/jquery.min.js"></script>
+
+</head>
+<body class="userpage bg-blank">
+
+  <div class="es-wrap">
+
+          	<div class="alert alert-warning alert-notice announcements-alert hidden-xs" role="alert">
+  <div class="container swiper-container">
+    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+          <i class="es-icon es-icon-infooutline mrm"></i>
+          本站维护更新中，具体事宜请联系 微信：653754835
+        </div>
+              
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button> 
+  </div>
+</div>
+<header id="ht-header" class="es-header navbar test-header headroom">
+  <div class="navbar-header">
+    <div class="visible-xs  navbar-mobile">
+      <a href="javascript:;" class="navbar-more js-navbar-more">
+        <i class="es-icon es-icon-menu"></i>
+      </a>
+      <div class="html-mask"></div>
+      <div class="nav-mobile">
+        <ul class="nav navbar-nav">
+
+          <li class="">
+            <a href="../index.html">首页 </a>
+          </li>
+          <li class="">
+            <a href="../course/list.html">前端课程 </a>
+          </li>
+          <li class="">
+            <a href="../nodeJs/nodejs.html">Node全栈 </a>
+          </li>
+          <li class="">
+            <a href="/article/61">开班信息 </a>
+          </li>
+          <li class="">
+            <a href="/article/51">公开课 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="/" class="navbar-brand">
+      <img src="../assets/img/logo-t.png">
+    </a>
+  </div>
+  <nav class="collapse navbar-collapse">
+    <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+      <li class="">
+        <a href="../index.html">首页 </a>
+      </li>
+      <li class="">
+        <a href="../course/list.html">前端课程 </a>
+      </li>
+      <li class="">
+        <a href="../nodeJs/nodejs.html">Node全栈 </a>
+      </li>
+      <li class="">
+        <a href="/article/61">开班信息 </a>
+      </li>
+      <li class="">
+        <a href="/article/51">公开课 </a>
+      </li>
+    </ul>
+    <div class="navbar-user ">
+      <ul class="nav user-nav">
+        <li class="user-avatar-li nav-hover">
+          <a href="javascript:;" class="dropdown-toggle">
+            <img class="avatar-xs" src="../assets/temp/img/124059bdc7ec532654.jpg">
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation" class="dropdown-header">王师兄0214</li>
+            <li><a href="/user/869"><i class="es-icon es-icon-person"></i>个人主页</a>
+            </li>
+            <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a>
+            </li>
+            <li class="hidden-lg">
+              <a href="/my">
+                <i class="es-icon es-icon-eventnote"></i>我的学习 </a>
+            </li>
+            <li><a href="/my/bill"><i class="es-icon es-icon-accountwallet"></i>账户中心</a>
+            </li>
+
+            <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a>
+            </li>
+            <li class="hidden-lg"><a href="/message/"><span class="pull-right num"></span><i class="es-icon es-icon-mail"></i>私信</a>
+            </li>
+            <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a>
+            </li>
+          </ul>
+        </li>
+        <li class="visible-lg">
+          <a href="/my">
+            我的学习
+          </a>
+        </li>
+        <li class="visible-lg nav-hover">
+
+          <a><i class="es-icon es-icon-mail"></i></a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/notification">
+                <span class="pull-right num"></span>
+                <i class="es-icon es-icon-notificationson"></i>通知
+              </a>
+            </li>
+            <li>
+              <a href="/message/">
+                <span class="pull-right num"></span>
+                <i class="es-icon es-icon-mail"></i>私信
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+            <div class="form-group">
+                <input class="form-control js-search" name="q" placeholder="搜索">
+                <button class="button es-icon es-icon-search"></button>
+            </div>
+        </form> -->
+    </div>
+  </nav>
+</header>
+            <div class="user-center-header" data-href="/files/user/2016/08-01/01470373d321128811.png?6.17.14" data-sharpness="40">
+  <div class="container clearfix">
+    <div class="user-avatar">
+      <div class="avatar-wrap">
+        <img class="avatar-lg" src="../assets/temp/img/0147037412c5364817.png">
+                  <span class="icon-user-status icon-md"><i class="es-icon es-icon-school"></i></span>
+              </div>
+      <div class="name">
+        陈学辉
+      </div>
+      <div class="position">
+        <span class="mrm">金牌讲师</span>
+                                      </div>
+      <div class="mates">
+        <!-- <span class="mrm test ">481</span>粉丝<span class="mlm mrm"></span>
+        <span class="mrm">0</span>关注 -->
+      </div>
+             <!--  <div style="display:none;" class="actions">
+          <a class="btn btn-primary follow-btn mrl" href="javascript:;" data-url="/user/19/follow"  style="display:none;">关注</a>
+          <a class="btn btn-default unfollow-btn mrl" href="javascript:;" data-url="/user/19/unfollow" >已关注</a>
+          <button class="btn btn-ghost-white test-btn" data-toggle="modal" data-backdrop="static" data-target="#modal" data-url="/message/create/19">私信</button>
+        </div>
+        -->
+          </div>
+    <div class="user-about hidden-sm hidden-xs">
+      <div class="user-about-content">
+        7年前端开发经验●前百度MSG前端架构师●主导开发过百度百科、百度知道、百度音乐、直达号等多个流量过亿的项目      </div>
+    </div>
+  </div>
+  <div class="mask"></div>
+</div>
+      
+      <div id="content-container" class="container">
+          <ul class="nav nav-tabs clearfix">
+    <!-- <li ><a href="/user/19/about">个人介绍</a></li> -->
+  		    <li class="active"><a href="/user/19/teach">在教课程</a></li>
+    
+          <!-- <li ><a href="/user/19/teaching/classrooms">在教mooc</a></li> -->
+        <!-- <li ><a href="/user/19/learn">在学课程</a></li> -->
+    <!-- <li ><a href="/user/19/learning/classrooms">在学mooc</a></li> -->
+
+
+    <!-- <li ><a href="/user/19/favorited">收藏课程</a></li> -->
+    <!-- <li ><a href="/user/19/group">加入小组</a></li> -->
+    <!-- <li ><a href="/user/19/following">关注&nbsp;/&nbsp;粉丝</a></li> -->
+  </ul>
+  
+      <div class="course-list">
+  <div class="row">
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/79/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十九章-网易严选（项目实战）</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十九章-网易严选（项目实战）">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/79" target="_blank">
+                JS第十九章-网易严选（项目实战）
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/61/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第十二章-移动端</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第十二章-移动端">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/61" target="_blank">
+                零基础第十二章-移动端
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/60/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第十一章-bootstrap</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第十一章-bootstrap">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/60" target="_blank">
+                零基础第十一章-bootstrap
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/59/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第十章-less</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第十章-less">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/59" target="_blank">
+                零基础第十章-less
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/58/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第九章-CSS3入门</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第九章-CSS3入门">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/58" target="_blank">
+                零基础第九章-CSS3入门
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/56/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第八章-整站开发</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第八章-整站开发">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/56" target="_blank">
+                零基础第八章-整站开发
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/55/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第七章-兼容性</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第七章-兼容性">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/55" target="_blank">
+                零基础第七章-兼容性
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/54/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第六章-表格表单</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第六章-表格表单">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/54" target="_blank">
+                零基础第六章-表格表单
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/52/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第五章-定位</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第五章-定位">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/52" target="_blank">
+                零基础第五章-定位
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/51/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第四章-浮动</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第四章-浮动">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/51" target="_blank">
+                零基础第四章-浮动
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/50/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第三章-标签类型划分&amp;嵌套规则</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第三章-标签类型划分&amp;嵌套规则">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/50" target="_blank">
+                零基础第三章-标签类型划分&amp;嵌套规则
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/49/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第二章-常用标签集合&amp;选择器</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第二章-常用标签集合&amp;选择器">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/49" target="_blank">
+                零基础第二章-常用标签集合&amp;选择器
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/48/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">canvas气泡+扇形导航</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="canvas气泡+扇形导航">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/48" target="_blank">
+                canvas气泡+扇形导航
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/47/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">炫酷照片墙</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="炫酷照片墙">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/47" target="_blank">
+                炫酷照片墙
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/46/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">零基础第一章-Web前端零基础入门（免费）</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="零基础第一章-Web前端零基础入门（免费）">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/46" target="_blank">
+                零基础第一章-Web前端零基础入门（免费）
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/45/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十八章- Node.js</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十八章- Node.js">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/45" target="_blank">
+                JS第十八章- Node.js
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/44/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十七章-react</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十七章-react">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/44" target="_blank">
+                JS第十七章-react
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/43/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十六章-移动端基础事件</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十六章-移动端基础事件">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/43" target="_blank">
+                JS第十六章-移动端基础事件
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/42/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十五章-Git/GitHub的使用 </p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十五章-Git/GitHub的使用 ">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/42" target="_blank">
+                JS第十五章-Git/GitHub的使用 
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+          <div style="visibility:hidden;" class="col-lg-3 col-md-4 col-xs-6 ht-mobile-show wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0s">
+        <div class="course-item">
+          <div class="course-img">
+            <a href="/course/41/lesson/list" target="_blank">
+                                            <span class="tags"><span class="tag-finished"></span></span>
+                                          <p style="width:100%;text-align:center;position: absolute;bottom: 0;color:#fff;background: rgba(0,0,0,0.8);margin-bottom: 0;font-size: 15px;margin: 10px 0 0 0;line-height: 30px;transition: background 200ms ease-in;">JS第十四章-ECMAScript 6/编译工具</p>
+              <img style="padding:0;" class="img-responsive" src="../assets/temp/img/yx.jpg" alt="JS第十四章-ECMAScript 6/编译工具">
+            </a>
+          </div>
+          <div class="course-info">
+            <!-- <div class="title">
+              <a class="link-dark" href="/course/41" target="_blank">
+                JS第十四章-ECMAScript 6/编译工具
+              </a>
+            </div> -->
+            <div class="metas clearfix">
+                            <!-- <span class="comment"><i class="es-icon es-icon-textsms"></i>0</span> -->
+              <span class="comment"><i class="es-icon es-icon-textsms"></i></span>
+              
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">vip</span>  
+              </span>
+    
+    
+  </span>            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+    <nav class="text-center">
+            <nav class=" text-center">
+      <ul class="pagination">
+                          <li class="active"><a href="/user/19?page=1">1</a></li>
+                  <li ><a href="/user/19?page=2">2</a></li>
+        
+                  <li><a  href="/user/19?page=2"><i class="es-icon es-icon-chevronright"></i></a></li>
+          <li><a  href="/user/19?page=2">尾页</a></li>
+              </ul>
+    </nav>
+  
+    </nav>
+  
+      </div>
+      
+              
+                   <div class="es-footer-link">
+  <div class="container">
+    <div class="row">
+      
+<div class="col-md-8 footer-main clearfix">
+    <div class="link-item ">
+    <h3>Students</h3>
+    <ul>
+                <li>
+            <a href="/course/27/lesson/list" target="_self">试听课程</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item ">
+    <h3>Teacher</h3>
+    <ul>
+                <li>
+            <a href="/user/19/about" target="_self">讲师简介</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item ">
+    <h3>News</h3>
+    <ul>
+                <li>
+            <a href="/article" target="_self">资讯频道</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item hidden-xs">
+    <h3>How</h3>
+    <ul>
+                <li>
+            <a href="/article/61" target="_self">公开课</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item hidden-xs">
+    <h3>Questions</h3>
+    <ul>
+                <li>
+            <a href="/article/11" target="_self">常见问题</a>
+        </li>
+            </ul>
+</div>
+
+</div>
+
+<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+  <a class="" href="http://www.apeclass.cn" target="_self">
+    <img src="../assets/temp/img/block_picture_1469698303.png" alt="建议图片大小为233*64">
+  </a>
+  <div class="footer-sns">
+    <a class="qrcode-popover top">
+      <i class="es-icon es-icon-weixin"></i>
+      <div class="qrcode-content">
+        <img src="../assets/temp/img/block_picture_1469698303.png" alt="">
+      </div>
+    </a>
+    <a style="display:none;" class="qrcode-popover top">
+      <i class="es-icon es-icon-android"></i>
+      <div class="qrcode-content">
+        <img src="../assets/temp/img/android.png" alt="">
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</div>     
+<footer class="es-footer footer-test">
+    <div class="copyright">
+        <div class="container">
+            <div class="mts">
+                 课程内容版权均归
+                <a href="/">
+            北京海棠优学教育科技有限公司
+          </a>
+                所有                  <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+            京ICP备16058256号-1
+          </a>
+                            </div>
+        </div>
+    </div>
+</footer>    
+      </div>
+
+        
+        
+  <div id="login-modal" class="modal" data-url="/login/ajax"></div>
+  <div id="modal" class="modal"></div>
+  
+</body>
+<script src="../assets/libs/headroom/Headroom.js"></script>
+<script src="../assets/libs/headroom/jQuery.headroom.js"></script>
+<script src="../assets/libs/wow.js"></script>
+<script src="../assets/libs/jquery-browser.js"></script>
+<script src="../assets/libs/jquery.corner.js"></script>
+<script src="../assets/libs/jquery.roundabout.js"></script>
+<script src="../assets/libs/jquery.roundabout-shapes.js"></script>
+<script src="../assets/libs/ht-pages.js"></script>
+</html>

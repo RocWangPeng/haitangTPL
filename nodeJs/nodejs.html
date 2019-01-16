@@ -1,0 +1,809 @@
+<html>
+
+<head>
+  <title>海棠学院-nodejs 简单可依赖的WEB前端机构</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" media="screen" />
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/haitang.css">
+  <link href="../assets/libs/bootstrap.css" rel="stylesheet" />
+
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <link href="../assets/css/main2.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/lessons.css">
+  <style type="text/css">
+    #lesson-try .lesson-btn-right {
+      margin-left: 0 !important;
+    }
+
+    #teacWX {
+      text-align: center;
+      margin-top: 20px;
+      display: none;
+    }
+
+    #findTheWX {
+      /*margin-left: 30px;*/
+      animation: 5s colorChangeLesson infinite;
+      display: inline-block;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      background-color: red;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="ht-header" class="es-header navbar test-header headroom">
+    <div class="navbar-header">
+      <div class="visible-xs  navbar-mobile">
+        <a href="javascript:;" class="navbar-more js-navbar-more">
+          <i class="es-icon es-icon-menu"></i>
+        </a>
+        <div class="html-mask"></div>
+        <div class="nav-mobile">
+          <ul class="nav navbar-nav">
+
+            <li class="">
+              <a href="../index.html">首页 </a>
+            </li>
+            <li class="">
+              <a href="../course/list.html">前端课程 </a>
+            </li>
+            <li class="">
+              <a href="../nodeJs/nodejs.html">Node全栈 </a>
+            </li>
+            <li class="">
+              <a href="/article/61">开班信息 </a>
+            </li>
+            <li class="">
+              <a href="/article/51">公开课 </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="/" class="navbar-brand">
+        <img src="../assets/img/logo-t.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse">
+      <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+        <li class="">
+          <a href="../index.html">首页 </a>
+        </li>
+        <li class="">
+          <a href="../course/list.html">前端课程 </a>
+        </li>
+        <li class="">
+          <a href="../nodeJs/nodejs.html">Node全栈 </a>
+        </li>
+        <li class="">
+          <a href="/article/61">开班信息 </a>
+        </li>
+        <li class="">
+          <a href="/article/51">公开课 </a>
+        </li>
+      </ul>
+      <div class="navbar-user ">
+        <ul class="nav user-nav">
+          <li class="user-avatar-li nav-hover">
+            <a href="javascript:;" class="dropdown-toggle">
+              <img class="avatar-xs" src="../assets/temp/img/124059bdc7ec532654.jpg">
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation" class="dropdown-header">王师兄0214</li>
+              <li><a href="/user/869"><i class="es-icon es-icon-person"></i>个人主页</a>
+              </li>
+              <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a>
+              </li>
+              <li class="hidden-lg">
+                <a href="/my">
+                  <i class="es-icon es-icon-eventnote"></i>我的学习 </a>
+              </li>
+              <li><a href="/my/bill"><i class="es-icon es-icon-accountwallet"></i>账户中心</a>
+              </li>
+
+              <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a>
+              </li>
+              <li class="hidden-lg"><a href="/message/"><span class="pull-right num"></span><i class="es-icon es-icon-mail"></i>私信</a>
+              </li>
+              <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a>
+              </li>
+            </ul>
+          </li>
+          <li class="visible-lg">
+            <a href="/my">
+              我的学习
+            </a>
+          </li>
+          <li class="visible-lg nav-hover">
+
+            <a><i class="es-icon es-icon-mail"></i></a>
+
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="/notification">
+                  <span class="pull-right num"></span>
+                  <i class="es-icon es-icon-notificationson"></i>通知
+                </a>
+              </li>
+              <li>
+                <a href="/message/">
+                  <span class="pull-right num"></span>
+                  <i class="es-icon es-icon-mail"></i>私信
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+              <div class="form-group">
+                  <input class="form-control js-search" name="q" placeholder="搜索">
+                  <button class="button es-icon es-icon-search"></button>
+              </div>
+          </form> -->
+      </div>
+    </nav>
+  </header>
+  <!-- banner -->
+  <div id="lesson-banner">
+    <div class="lesson-container">
+      <p><b>NodeJS全栈工程师</b></p>
+      <p><b>也许是东半球第二好的NodeJS全栈课程，</b><b><i>体系、全面、深度</i></b>； <br> <b>课程涵盖：ECMAScript6、BootStrap响应式框架、LESS动态CSS、Node.js实战开发、Express开发框架、NoSql、Mongodb数据库、ejs、jade模板、WebSocket、主流前端框架React、Git协同开发、GitHub代码仓库、Ajax和前后端分离、微信公众号开发等。
+          <br> 这一次，跟我们一起深入掌握WEB全栈开发。</b></p>
+      <ul class="lesson-icon">
+        <li><span></span><b>学员专属直播答疑</b></li>
+        <li><span></span><b>在线视频教学</b></li>
+        <li><span></span><b>专注WEB前端教学</b></li>
+        <li><span></span><b>一线实战案例</b></li>
+      </ul>
+      <p></p>
+      <!-- <p class="lesson-icon">
+  
+        <span></span>222
+        <span></span>333
+        <span></span>444
+        <span></span>555
+      </p> -->
+    </div>
+  </div>
+  <!-- lessons -->
+  <div class="lesson-open-desc">
+    <p style="text-align:left;">
+      <a class="history-a" href="http://apeclass.cn/lesson/history.html" target="_blank">从小小菜鸟到百度到底有多远？——
+        致广大前端爱好者的一封信，或许这能改变你的职业轨迹</a>
+      <span>
+        <a href="http://apeclass.cn/lesson/history.html" target="_blank">开始阅读</a>
+      </span>
+    </p>
+  </div>
+
+  <div id="syllabus-pos" class="lines">
+    <div class="line" style="padding-left:0 !important">
+      <p style="font-size:30px;color:#f76700;text-align:center;font-weight:bold;">为什么说NodeJS才是最值得学习的技术？</p>
+      <p style="text-align:center;color:#000;">目前国内使用Node.js开发的互联网项目将近16万个Web站点。即将成为Web开发的首选技术<br />比如：<i><b style="color:red;font-size:16px;">京东、知乎、eBay、Microsoft</b></i>等</p>
+      <p style="text-align:center;color:#000;">Node.js目前全国平均工资为<i><b style="color:red;font-size:18px;">16724</b></i>
+        元（智联数据），其中北上广深地区Node.js1~2年经验工程师平均工资在<i><b style="color:red;font-size:18px;">22K-31K</b></i> 之间。<br />二三线城市约为8K~25K之间不等（采样数据：成都，武汉，郑州，长沙）</p>
+      <br>
+      <p style="text-align:center;">
+        <embed src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high" align="middle"
+          allowScriptAccess="always" width="960" height="540" flashvars="uu=fqll6vh2oy&vu=ffe1ca1483&pu=05b3cea709&auto_play=0&gpcflag=1&width=640&height=360&lang=zh_CN"
+          type="application/x-shockwave-flash"></embed>
+        <a id="findTheWX" class="lesson-btn lesson-btn-right" target="_blank" style="cursor:pointer;">点击获取老师微信</a>
+        <p id="teacWX"><img src="../assets/temp/img/weixin-m.jpg"></p>
+      </p>
+      <br>
+
+      <div class="line-content">
+        <h3 class="line-title">
+          课程大纲
+          <div class="dot-left"></div>
+          <div class="dot-right"></div>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div id="syllabus" style="margin-top:-31px !important;">
+    <div class="lesson-title wow zoomIn" data-wow-delay="0.3s">
+      <div class="lesson-title-bg"></div>
+      <div class="lesson-title-wd">Git&React</div>
+      <h1>Git、GitHub、React</h1>
+      <p class="syllabus-desc">Git/GitHub相信你一定不会陌生，简单又实用的协同开发方式</p>
+      <p class="syllabus-desc">React 起源于 Facebook 的内部项目，由于 React 的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。</p>
+      <p class="syllabus-down">查看详情</p>
+      <div id="wrapper2" class="syllabus-lessons animated" style="display:none;">
+        <!-- 品牌列表开始  -->
+        <div class="brand-list">
+          <div class="brand-bd cle eee" id="brand-waterfall">
+            <!-- 循环字母模块 item -->
+            <div class="item" id="brand-a">
+              <p>git与github简介</p>
+              <p>安装git并关联github</p>
+            </div>
+            <div class="item" id="brand-b">
+              <p>建立项目与下载项目</p>
+              <p>文件提交步骤</p>
+              <p>文件差异与撤销 </p>
+              <p>删除与恢复 </p>
+              <p>分支与个人主页 </p>
+            </div>
+            <div class="item" id="brand-c">
+              <p>react简介</p>
+              <p>render方法</p>
+              <p>JSX语法</p>
+            </div>
+            <div class="item" id="brand-d">
+              <p>定义组件</p>
+              <p>组件属性</p>
+              <p>组件子节点</p>
+            </div>
+            <div class="item" id="brand-e">
+              <p>验证组件属性值的类型</p>
+              <p>组件的嵌套</p>
+              <p>组件的状态</p>
+            </div>
+            <div class="item" id="brand-f">
+              <p>事件与状态结合</p>
+              <p>父子组件之间的数据传输</p>
+              <p>refsmp4</p>
+            </div>
+          </div>
+        </div>
+        <p class="syllabus-up">收起详情</p>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+    <div class="lesson-title wow zoomIn" data-wow-delay="0.3s">
+      <div class="lesson-title-bg"></div>
+      <div class="lesson-title-wd">Bootstrap</div>
+      <h1>Bootstrap</h1>
+      <p class="syllabus-desc">Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob
+        Thornton合作开发，是一个CSS/HTML框架。海棠致力于为广大国内开发者提供详尽的中文教程、代码实例等，助力开发者掌握并使用这一框架。</p>
+      <p class="syllabus-down">查看详情</p>
+      <div id="wrapper4" class="syllabus-lessons animated" style="display:none;">
+        <!-- 品牌列表开始  -->
+        <div class="brand-list">
+          <div class="brand-bd cle eee" id="brand-waterfall">
+            <div class="item" id="brand-a">
+              <p>bootstrap介绍</p>
+              <p>栅格系统</p>
+              <p>栅格布局</p>
+              <p>屏幕尺寸</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>列偏移</p>
+              <p>列排序与嵌套</p>
+              <p>特殊标签以及样式</p>
+              <p>表格相关样式</p>
+              <p>表单的操作</p>
+              <p>表单</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>按钮</p>
+              <p>响应式图片</p>
+              <p>辅助类样式</p>
+              <p>响应式工具</p>
+              <p>打印样式</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>字体</p>
+              <p>按钮组</p>
+              <p>下拉菜单</p>
+              <p>下拉菜单的样式</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>输入框组</p>
+              <p>导航</p>
+              <p>选项卡</p>
+              <p>导航条</p>
+              <p>路径导航与分页</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>标记与巨幕</p>
+              <p>缩略图与警告框</p>
+              <p>进度条</p>
+              <p>图文混排</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>列表组</p>
+              <p>面板</p>
+              <p>弹出层</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>滚动监听</p>
+              <p>提示标签</p>
+              <p>提示框</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>折叠菜单（单个</p>
+              <p>折叠菜单（一组）</p>
+              <p>轮播图</p>
+            </div>
+
+          </div>
+        </div>
+        <p class="syllabus-up">收起详情</p>
+      </div>
+    </div>
+    <!-- bootstrap over -->
+
+    <!-- <hr> -->
+
+    <div class="lesson-title wow zoomIn" data-wow-delay="0.3s">
+      <div class="lesson-title-bg"></div>
+      <div class="lesson-title-wd">LESS、ES6</div>
+      <h1>LESS&ES6</h1>
+      <p class="syllabus-desc">Less 扩充了 CSS 语言,增加了诸如变量、混合(mixin)、运算、函数等。 Less 既可以运行在服务器端(Node.js 和 Rhino
+        平台)也可以运行在客户端(浏览器)。</p>
+      <p class="syllabus-desc">ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript
+        语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</p>
+      <p class="syllabus-down">查看详情</p>
+      <div id="wrapper1" class="syllabus-lessons animated" style="display:none;">
+        <!-- 品牌列表开始  -->
+        <div class="brand-list">
+          <div class="brand-bd cle www" id="brand-waterfall">
+            <!-- 循环字母模块 item -->
+            <div class="item" id="brand-a">
+              <p>less介绍</p>
+              <p>编译方法 </p>
+              <p>变量 </p>
+            </div>
+            <div class="item" id="brand-b">
+              <P>混合-1 </P>
+              <P>混合-2</P>
+              <P>匹配模式 </P>
+            </div>
+            <div class="item" id="brand-c">
+              <P>嵌套</P>
+              <P>运算</P>
+              <p>LESS实战</p>
+            </div>
+            <div class="item" id="brand-d">
+              <p>ES6简介</p>
+              <p>let</p>
+              <p>块级作用域</p>
+            </div>
+            <div class="item" id="brand-e">
+              <p>let与for循环</p>
+              <p>let选项卡</p>
+            </div>
+            <div class="item" id="brand-f">
+              <p>常量</p>
+              <p>数组的解构赋值</p>
+              <p>对象的解构赋值</p>
+              <p>字符串的扩展方法</p>
+              <p>模板字符串</p>
+            </div>
+            <div class="item" id="brand-g">
+              <p>math对象的扩展方法</p>
+              <p>数组的扩展方法-1</p>
+              <p>数组的扩展方法-2</p>
+              <p>数组的扩展方法-3</p>
+            </div>
+            <div class="item" id="brand-h">
+              <p>函数参数默认值</p>
+              <p>rest参数</p>
+              <p>箭头函数</p>
+            </div>
+            <div class="item" id="brand-l">
+              <p>对象简洁表示方法与属性名表达式</p>
+              <p>object.is与objec.assign</p>
+              <p>symbol</p>
+            </div>
+            <div class="item" id="brand-m">
+              <p>set数据结构</p>
+              <p>map数据结构</p>
+              <p>ES6转ES5的方法</p>
+            </div>
+          </div>
+        </div>
+        <p class="syllabus-up">收起详情</p>
+      </div>
+    </div>
+    <!-- nodejs start -->
+    <div class="lesson-title mt10 wow zoomIn" data-wow-delay="0.3s">
+      <div class="lesson-title-bg"></div>
+      <div class="lesson-title-wd">NodeJS全栈</div>
+      <h1>NodeJS</h1>
+      <p class="syllabus-desc">Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
+        Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。
+        Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+      <p class="syllabus-desc">通俗来说、Nodejs可以让咱们前端的js代码运行在服务的、并且高效去构建服务的应用</p>
+      <!-- <p class="syllabus-desc">css入门~3333~</p> -->
+      <p class="syllabus-down">查看详情</p>
+      <div id="wrapper" class="syllabus-lessons animated" style="display:none;">
+        <!-- 品牌列表开始  -->
+        <div class="brand-list">
+          <div class="brand-bd cle www" id="brand-waterfall">
+            <!-- 循环字母模块 item -->
+            <div class="item" id="brand-a">
+              <p>Node.js开篇历史，发展以及Node.js编程的三大特性详解以及第一个Hello World应用程序。</p>
+              <p>Node.js与服务器，JavaScript的模块化思想，第一个模块—http。URL模块详解，URL的parse过滤。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>Node.js的路由机制以及生命周期中的事件环机制。</p>
+              <p>I/O操作，读写模块详解，fs对象进行Web读写静态网页。异步和同步。</p>
+              <p>静态资源管理器，静态页面与动态页面的区别，以及服务器执行脚本原理。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>模块化的概念，文件夹模块与package文件。</p>
+              <p>npm，相对路径与绝对路径。Post与Get请求，formidable技术。</p>
+              <p>几种上传文件的方式，form表单的action属性以及HTTP流量。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>Node.js的模板（ejs和jade）的使用和个性化定制。</p>
+              <p>Express框架安装，路由机制以及中间件介绍。</p>
+              <p>Reader与Send简介。常见Express的API介绍与使用。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>实战：岁月相册的添加，删除。</p>
+              <p>实战：岁月相册的修改与读取。</p>
+              <p>实战：岁月相册的发布与预编译。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>后台EJS,AJAX数据请求以及后台服务的接收与预处理。</p>
+              <p>岁月相册的完整架构设计与编写。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>什么是NoSQL,NoSQL数据库原理介绍。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>MongoDB安装，MongoDB的使用。</p>
+              <p>使用MongoDB进行增删改查操作。</p>
+              <p>数据库知识与复习，DAO的封装结构。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>find函数封装和分页，更改和删除。</p>
+              <p>实战：留言板介绍。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>状态保持，Cookie，Session，与MD5介绍。</p>
+              <p>MD加密的内幕，表单注册登录信息加密。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>gm图片处理，图像裁剪的前端页面功能。后端处理功能。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>实战：班级说说的初步结构，班级说说的注册业务。</p>
+              <p>实战：班级说说的登录业务，上传头像的两种方式。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>索引，发表说说，异步请求说说。</p>
+              <p>首页列表，异步请求分页。</p>
+              <p>成员列表和用户个人主页，用户列表。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>mongoose完整系统案例。</p>
+              <p>WebSocket协议，案例开发。</p>
+            </div>
+            <div class="item" id="brand-a">
+              <p>Node.js开发公共平台的准备工作，测试环境部署。</p>
+              <p>搭建本地服务器，申请测试微信号，注意事项。</p>
+
+            </div>
+            <div class="item" id="brand-a">
+              <p>微信时间交互，代码实现，Access_Token（1）更新机制，创建网页菜单。</p>
+              <p>网页授权获取用户openId, Access_Token更细机制。代码实现。</p>
+              <p>真实环境部署，服务器域名和微信公告号设置，总结.</p>
+            </div>
+          </div>
+        </div>
+        <p class="syllabus-up">收起详情</p>
+      </div>
+    </div>
+    <!-- nodejs over -->
+    <!-- <p>
+              <a style="padding: 3px 15px;border: 1px solid #2cd998;font-size: 20px;background-color: #2cd998;color: #fff;" href="http://apeclass.cn/course/27/lesson/list" target="_blank">点击试听</a>
+          </p> -->
+  </div>
+  <!-- lesson over -->
+
+  <div id="syllabus-pos" class="lines">
+    <div class="line" style="padding-left:0 !important">
+      <div class="line-content">
+        <h3 class="line-title">
+          课程详情
+          <div class="dot-left"></div>
+          <div class="dot-right"></div>
+        </h3>
+      </div>
+      <p>
+        <h2>前端全栈工程师高阶实战开发</h2>
+      </p>
+      <p>适用群体：1-3年前端开发经验</p>
+      <p>课程周期：2~3个月</p>
+      <p>课程费用：2999（双十一优惠卷可以抵扣500、折后2499）</p>
+      <p>开课时间：11月下旬</p>
+      <p>课程涵盖：ECMAScript6、BootStrap响应式框架、LESS动态CSS、Node.js实战开发、Express快速开发框架、NoSql、Mongodb数据库、ejs、jade模板、WebSocket、主流前端框架React、Git协同开发、GitHub代码仓库、Ajax和前后端分离、微信公众号开发等。</p>
+      <p>课程着重讲解NodeJS原理及项目实战，深入浅出拆解常见后端应用开发。由海棠技术合伙人Rocky大神亲自直播授课。</p>
+      <p>咨询Q Q：2412619907 美丽的小花老师~</p>
+      <p>QQ群：311927099</p>
+      <p style="padding-bottom:10px;">老师微信：feclass66 小河老师</p>
+    </div>
+  </div>
+  <div id="syllabus-pos" class="lines">
+    <div class="line questions" style="padding-left:0 !important">
+      <div class="line-content">
+        <h3 class="line-title">
+          常见问题
+          <div class="dot-left"></div>
+          <div class="dot-right"></div>
+        </h3>
+      </div>
+      <p>01、课程周期是多长？ <br>课程周期安排在2~3个月左右。</p>
+      <p>02、为什么你们的Nodejs课程周期这么久？ <br>我们也想一个月讲完，可...深度摆在这里，同学们也需要时间来吸收知识吧~</p>
+      <p>03、授课方式是怎么样的？ <br>80%的直播课程（由Rocky大神亲自授课） + 20%的录播课程</p>
+      <p>04、学习时间如何安排？ <br>每周都会给您安排到学习内容，直播或者录播.anyway，接下来的日子可能需要您可能不太轻松...</p>
+      <p>05、如果错过直播还可以回放吗？ <br>可以。但是我们强烈建议您参加直播课，可以和讲师互动提问。如果确实有事错过，我们会把直播课录播成视频给到您。</p>
+      <p>06、我0基础可以学得会吗？ <br>很难。该课程面向1~3年经验的前端开发人员，需要扎实的原生js功底。</p>
+      <p>07、如何高效的提问？（重点） <br>讲师异常繁忙，尚不能做到时刻响应（我们的经验也发现多数学生的问题多数是由于粗心导致），这一次我们稍稍做出了些许改变。比如提供了下面高效的提问方式： <br>
+        ①：邮件提问；详细描述你的问题，以及您的具体代码，具体运行环境，如果再配个图就更佳了。切忌：“老师，为什么我的div显示不出来”这样的问题。至少要让我看看你的代码吧，同学？ <br>
+        ②：海棠学习平台提问；我们会为您开设该课程专门的提问频道，您可以在线提交您的问题。当然，也希望您“事无巨细”的提问哟~ <br>
+        ③：直播答疑；讲师&班主任老师会收集整理大家的问题，不定期直播课统一答疑，或许这也是你喜欢的方式~ <br>
+        ④：1v1答疑：我们很想写成“1v1预约答疑”，这样看上去逼格会更高。但...你要是真不去“预约”，讲师也不能假装看不见问题，对吧？不过...我们还是建议您参考前三条~
+      </p>
+      <p>08、入学流程 <br>缴纳99元“抢座费”，或者您也可以称之为“报名费”。本月中旬我们会开放正式课程报名入口，届时您可以选择报名该课程，同时可享受学费减免500元优惠。若放弃报名，已缴纳的99元会原路退还给您。</p>
+      <p>09、正式报名后可以退费吗？ <br>可以。开课前随时无条件退费。</p>
+      <p>10、如何报名？ <br>学习名额已不多，开课前报名学费可优惠500元。打架报名中...请联系美丽的小花老师~QQ：2412619907 或点击<a class="lesson-btn lesson-btn-right"
+          target="_blank" href="http://kefu.qycn.com/vclient/chat/?websiteid=131392">这里</a></p>
+
+    </div>
+  </div>
+  <div id="lesson-try">
+    <p>这一次、您可以系统学习一下Nodejs</p>
+    <p>双十一课程优惠、可享学费减免 <b><i style="color:red;font-size:28px;">500</i></b> 元优惠</p>
+    <!-- <p style="font-size:30px;color:red;">为什么说NodeJS才是新手最值得学习的技术？</p> -->
+    <p>
+      <!-- <a class="lesson-btn lesson-btn-left" href="http://apeclass.cn/article/61">为什么说Node才是新手最值得学习的技术？</a> -->
+      <a id="findTheWay" class="lesson-btn lesson-btn-right" target="_blank" style="cursor:pointer;">领取优惠</a>
+      <!-- <a class="lesson-btn lesson-btn-right" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2412619907&site=qq&menu=yes">一探究竟？</a> -->
+    </p>
+  </div>
+  <!-- footer -->
+  <div id="lesson-footer" style="text-align: center;line-height: 50px;background: #212121;border-top: 1px solid #444;font-size: 12px;">
+    <div class="mts">课程内容版权均归<a href="http://apeclass.cn/">北京海棠优学教育科技有限公司</a>所有<a href="http://www.miibeian.gov.cn/"
+        target="_blank" style="padding-left: 50px;">京ICP备16020780号-1</a>
+    </div>
+  </div>
+  <!-- info-layer -->
+  <div class="info-layer" style="display:none;">
+    <div class="info-layer-con clearfix">
+      <div class="info-layer-word">
+        <p>这一次，我们的模式将做一些调整</p>
+        <p>不变的是，依然诚意满满。2017.12.18见~</p>
+      </div>
+      <div class="sign-up">
+        <span><a style="color:#fff;" href="http://wpa.qq.com/msgrd?v=3&uin=723936083&site=qq&menu=yes" target="_blank"
+            title="在线QQ客服">抢占名额</a></span>
+      </div>
+      <div class="times">
+        <div id="countdown"></div>
+        <p id="note"></p>
+      </div>
+    </div>
+    <span class="info-close">
+      <img src="../assets/temp/img/close.png">
+    </span>
+  </div>
+  <!-- info over -->
+  <script>
+    (function () {
+      var c = document.createElement('script');
+      c.src = '//kefu.qycn.com/vclient/state.php?webid=131392';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(c, s);
+    })();
+  </script>
+</body>
+<script src="../assets/libs/jquery.min.js"></script>
+<script src="../assets/libs/wow.js"></script>
+<script src="../assets/js/cascade.js"></script>
+<script type="text/javascript">
+  // 
+  if ($(window).width() > 768) {
+    // new WOW().init();
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100,
+      mobile: true,
+      live: true
+    });
+    wow.init();
+
+    function infoLayer() {
+      //底部栏banner信息
+      setTimeout(function () {
+        $('.info-layer').fadeIn(1500);
+      }, 2000);
+
+      $('.info-close').click(function () {
+        $('.info-layer').fadeOut(1500);
+      });
+    }
+    // infoLayer();
+  }
+  //课程大纲
+
+  function openUrl(url) {
+    var a = $('<a href="' + url + '" target="_blank"></a>')[0];
+    var e = document.createEvent('MouseEvents');
+    e.initEvent('click', true, true);
+    a.dispatchEvent(e);
+  }
+  // a标签js化
+  $('.syllabus-down').on('click', function () {
+    // location.href= 'http://kefu.qycn.com/vclient/chat/?websiteid=131392';
+    openUrl('http://kefu.qycn.com/vclient/chat/?websiteid=131392');
+  });
+  $('#findTheWay').on('click', function () {
+    openUrl('http://kefu.qycn.com/vclient/chat/?websiteid=131392');
+  });
+  $('#findTheWX').on('click', function () {
+    $('#teacWX').fadeIn();
+  });
+
+  $('.syllabus-up').on('click', function () {
+    $(this).parent("div").addClass('rollOut hinge1s');
+    $(this).parent("div").fadeOut(1100);
+    var _this = $(this);
+    setTimeout(function () {
+      _this.parent("div").removeClass('rollOut hinge1s');
+      _this.parent().prev().fadeIn(1500);
+    }, 1000);
+  });
+
+  $('.lesson-container p').eq(0).fadeIn(1000);
+  $('.lesson-container p').eq(1).fadeIn(1500);
+  $('#lesson-banner .lesson-icon').fadeIn(3000);
+
+  // ie
+  var client = function () {
+    var engine = { //呈现引擎
+      trident: 0,
+      gecko: 0,
+      webkit: 0,
+      khtml: 0,
+      presto: 0,
+      ver: null //具体的版本号
+    };
+    var browser = { //浏览器
+      ie: 0,
+      firefox: 0,
+      safari: 0,
+      konq: 0,
+      opera: 0,
+      chrome: 0,
+      ver: null //具体的版本号
+    };
+    var system = { //操作系统
+      win: false,
+      mac: false,
+      x11: false
+    };
+
+    var ua = navigator.userAgent;
+    if (/AppleWebKit\/(\S+)/.test(ua)) { //匹配Webkit内核浏览器（Chrome、Safari、新Opera）
+      engine.ver = RegExp["$1"];
+      engine.webkit = parseFloat(engine.ver);
+      if (/OPR\/(\S+)/.test(ua)) { //确定是不是引用了Webkit内核的Opera
+        browser.ver = RegExp["$1"];
+        browser.opera = parseFloat(browser.ver);
+      } else if (/Chrome\/(\S+)/.test(ua)) { //确定是不是Chrome
+        browser.ver = RegExp["$1"];
+        browser.chrome = parseFloat(browser.ver);
+      } else if (/Version\/(\S+)/.test(ua)) { //确定是不是高版本（3+）的Safari
+        browser.ver = RegExp["$1"];
+        browser.safari = parseFloat(browser.ver);
+      } else { //近似地确定低版本Safafi版本号
+        var SafariVersion = 1;
+        if (engine.webkit < 100) {
+          SafariVersion = 1;
+        } else if (engine.webkit < 312) {
+          SafariVersion = 1.2;
+        } else if (engine.webkit < 412) {
+          SafariVersion = 1.3;
+        } else {
+          SafariVersion = 2;
+        }
+        browser.safari = browser.ver = SafariVersion;
+      }
+    } else if (window.opera) { //只匹配拥有Presto内核的老版本Opera 5+(12.15-)
+      engine.ver = browser.ver = window.opera.version();
+      engine.presto = browser.opera = parseFloat(engine.ver);
+    } else if (/Opera[\/\s](\S+)/.test(ua)) { //匹配不支持window.opera的Opera 5-或伪装的Opera
+      engine.ver = browser.ver = RegExp["$1"];
+      engine.presto = browser.opera = parseFloat(engine.ver);
+    } else if (/KHTML\/(\S+)/.test(ua) || /Konqueror\/([^;]+)/.test(ua)) {
+      engine.ver = browser.ver = RegExp["$1"];
+      engine.khtml = browser.konq = parseFloat(engine.ver);
+    } else if (/rv:([^\)]+)\) Gecko\/\d{8}/.test(ua)) { //判断是不是基于Gecko内核
+      engine.ver = RegExp["$1"];
+      engine.gecko = parseFloat(engine.ver);
+      if (/Firefox\/(\S+)/.test(ua)) { //确定是不是Firefox
+        browser.ver = RegExp["$1"];
+        browser.firefox = parseFloat(browser.ver);
+      }
+    } else if (/Trident\/([\d\.]+)/.test(ua)) { //确定是否是Trident内核的浏览器（IE8+）
+      engine.ver = RegExp["$1"];
+      engine.trident = parseFloat(engine.ver);
+      if (/rv\:([\d\.]+)/.test(ua) || /MSIE ([^;]+)/.test(ua)) { //匹配IE8-11+
+        browser.ver = RegExp["$1"];
+        browser.ie = parseFloat(browser.ver);
+      }
+    } else if (/MSIE ([^;]+)/.test(ua)) { //匹配IE6、IE7
+      browser.ver = RegExp["$1"];
+      browser.ie = parseFloat(browser.ver);
+      engine.ver = browser.ie - 4.0; //模拟IE6、IE7中的Trident值
+      engine.trident = parseFloat(engine.ver);
+    }
+
+    var p = navigator.platform; //判断操作系统
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p.indexOf("X11") == 0) || (p.indexOf("Linux") == 0);
+    if (system.win) {
+      if (/Win(?:dows )?([^do]{2})\s?(\d+\.\d+)?/.test(ua)) {
+        if (RegExp["$1"] == "NT") {
+          system.win = ({
+            "5.0": "2000",
+            "5.1": "XP",
+            "6.0": "Vista",
+            "6.1": "7",
+            "6.2": "8",
+            "6.3": "8.1",
+            "10": "10"
+          })[RegExp["$2"]] || "NT";
+        } else if (RegExp["$1"] == "9x") {
+          system.win = "ME";
+        } else {
+          system.win = RegExp["$1"];
+        }
+      }
+    }
+
+    return {
+      ua: ua, //用户浏览器Ua原文
+      engine: engine, //包含着用户浏览器引擎（内核）信息
+      browser: browser, //包括用户浏览器品牌与版本信息
+      system: system //用户所用操作系统及版本信息
+    };
+
+  }();
+  var iehtml = '<div class="unwelcomeie">' +
+    '<p class="tittle">抱歉!</p>' +
+    '<p class="tittle">当您看到这个页面的时候，说明您使用了<b><s>IE浏览器</s></b>。</p>' +
+    '<p>本页面运用了大量的CSS3、HTML5的新特性，为了节省不必要的时间浪费（比如写个兼容？）。我们决定不支持IE以及使用IE内核的国产浏览器。</p>' +
+    '<p>想得到我们网站最佳访问效果，我们强烈建议您升级最新版的标准浏览器。比如以下推荐的浏览器。</p>' +
+    '<ul>' +
+    '<li>' +
+    '<div><img src="./browser-img/chrome.png"></div>' +
+    '<div><a href="http://rj.baidu.com/soft/detail/14744.html">chrome下载</a></div>' +
+    '</li>' +
+    '<li>' +
+    '<div><img src="./browser-img/firefox.png"></div>' +
+    '<div><a href="http://rj.baidu.com/soft/detail/11843.html">firefox下载</a></div>' +
+    '</li>' +
+    '<li>' +
+    '<div><img src="./browser-img/opera.png"></div>' +
+    '<div><a href="http://rj.baidu.com/soft/detail/11508.html">opera下载</a></div>' +
+    '</li>' +
+    '</ul>' +
+    '<div style="clear:both;"></div>' +
+    '</div>';
+  if (client.browser.ie > 1 && client.browser.ie < 11) {
+    document.body.innerHTML = iehtml;
+    console.log(client.browser.ie)
+  }
+</script>
+
+</html>

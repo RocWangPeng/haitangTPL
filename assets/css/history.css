@@ -1,0 +1,75 @@
+body{
+	background-color: #ccc !important;
+}
+#history{
+	width: 720px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 20px 40px ;
+}
+.letter-head,.letter-content,.letter-footer{
+	text-align: left;
+}
+.letter-head{
+	height: 195px;
+	background: url(../img/letter-header.png) no-repeat 0 0;
+	position: relative;
+}
+.letter-content{
+	background: url(../img/letter-bg.png) repeat-y 0 0;
+	position: relative;
+}
+.letter-content p{
+	width: 600px;
+	margin: 0 auto;
+	font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+	color: #6B6B6B;
+	line-height: 30px;
+	font-size: 16px;
+}
+.letter-footer{
+	height: 200px;
+	background: url(../img/letter-footer.png) no-repeat 0 0;
+}
+#history h1{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50px;
+	left: 60px;
+}
+#history h1 span{
+	font-size: 26px;
+	display: block;
+	font-weight: 700;
+	padding: 10px 3px;
+	font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+}
+#history h2{
+	width: 591px;
+    margin: 0 auto;
+	font-size: 20px;
+	border-left: 5px solid #46B9FF;
+	padding-left: 5px;
+	margin-bottom: 20px;
+	font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+}
+
+.notes{
+	font-size: 12px;
+	color: #abc;
+	font-style: italic;
+}
+.italic{
+	font-style: italic;
+}
+.underline{
+	font-weight: bold;
+	text-decoration: underline;
+}
+@media(max-width:769px){
+	body{
+		background-color:#fff !important;
+	}
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="baidu-site-verification" content="kBRZf7l0H8" />
+  <title>海棠学院 - WEB前端学习新体验</title>
+  <meta name="keywords" content="海棠学院,海棠,海棠优学,海棠网,海棠网校,apeclass,web前端，web前端开发，web前端培训，web前端培训机构，web前端学习，web前端在线学习，web前端工程师" />
+  <meta name="description" content="海棠学院，简单可依赖的优质课程，90%学员口碑而来。课程涵盖html,css,html5,css3,jquery,javascript,zepto,angular,react，vue，node等" />
+
+  <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" media="screen" />
+
+
+  <link href="../assets/libs/bootstrap.css" rel="stylesheet" />
+
+  <link rel="stylesheet" media="screen" href="../assets/css/common.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/es-icon.css" />
+  <link rel="stylesheet" media="screen" href="../assets/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/haitang.css">
+
+  <link href="../assets/css/main.css" rel="stylesheet" />
+
+  <script src="../assets/libs/jquery.min.js"></script>
+
+</head>
+<body >
+
+  <div class="es-wrap">
+
+          	<div class="alert alert-warning alert-notice announcements-alert hidden-xs" role="alert">
+  <div class="container swiper-container">
+    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+          <i class="es-icon es-icon-infooutline mrm"></i>
+          本站维护更新中，具体事宜请联系 微信：653754835
+        </div>
+              
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button> 
+  </div>
+</div>
+      <header id="ht-header" class="es-header navbar test-header headroom">
+    <div class="navbar-header">
+        <div class="visible-xs  navbar-mobile">
+            <a href="javascript:;" class="navbar-more js-navbar-more">
+                <i class="es-icon es-icon-menu"></i>
+            </a>
+            <div class="html-mask"></div>
+            <div class="nav-mobile">
+                <!-- <form class="navbar-form" action="/search" method="get">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="搜索" name="q">
+                        <button class="button es-icon es-icon-search"></button>
+                    </div>
+                </form> -->
+                <ul class="nav navbar-nav">
+                         
+      <li class="">
+  <a href="/#" >首页 </a>
+  </li>      
+      <li class="">
+  <a href="/user/19" >前端课程 </a>
+  </li>      
+      <li class="">
+  <a href="/lesson/nodejs.html" >Node全栈 </a>
+  </li>      
+      <li class="">
+  <a href="/article/61" >开班信息 </a>
+  </li>      
+      <li class="">
+  <a href="/article/51" >公开课 </a>
+  </li>                  </ul>
+            </div>
+        </div>
+        <a href="/" class="navbar-brand">
+          <img src="../assets/img/logo-t.png">
+          </a>
+    </div>
+    <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+                
+      <li class="">
+  <a href="/#" >首页 </a>
+  </li>      
+      <li class="">
+  <a href="/user/19" >前端课程 </a>
+  </li>      
+      <li class="">
+  <a href="/lesson/nodejs.html" >Node全栈 </a>
+  </li>      
+      <li class="">
+  <a href="/article/61" >开班信息 </a>
+  </li>      
+      <li class="">
+  <a href="/article/51" >公开课 </a>
+  </li>          </ul>
+        <div class="navbar-user ">
+            <ul class="nav user-nav">
+                                <li class="user-avatar-li nav-hover">
+                    <a href="javascript:;" class="dropdown-toggle">
+                      <img class="avatar-xs" src="../assets/temp/img/124059bdc7ec532654.jpg">
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation" class="dropdown-header">王师兄0214</li>
+                        <li><a href="/user/869"><i class="es-icon es-icon-person"></i>个人主页</a>
+                        </li>
+                        <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a>
+                        </li>
+                        <li class="hidden-lg">
+                            <a href="/my">
+                                <i class="es-icon es-icon-eventnote"></i>我的学习                            </a>
+                        </li>
+                        <li><a href="/my/bill"><i class="es-icon es-icon-accountwallet"></i>账户中心</a>
+                        </li>
+                        
+                        <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a>
+                        </li>
+                        <li class="hidden-lg"><a href="/message/"><span class="pull-right num"></span><i class="es-icon es-icon-mail"></i>私信</a>
+                        </li>
+                        <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="visible-lg">
+                    <a href="/my">
+                          我的学习
+                      </a>
+                </li>
+                <li class="visible-lg nav-hover">
+
+                                        <a><i class="es-icon es-icon-mail"></i></a>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                                                <li>
+                            <a href="/notification">
+                                <span class="pull-right num"></span>
+                                <i class="es-icon es-icon-notificationson"></i>通知
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="/message/">
+                                <span class="pull-right num"></span>
+                                <i class="es-icon es-icon-mail"></i>私信
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                            </ul>
+            <!-- <form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+                <div class="form-group">
+                    <input class="form-control js-search" name="q" placeholder="搜索">
+                    <button class="button es-icon es-icon-search"></button>
+                </div>
+            </form> -->
+        </div>
+    </nav>
+</header>
+        
+                
+      <div id="content-container" class="container">
+        
+
+
+<div class="row row-3-9 mylearing">
+  <div class="col-md-3">
+    <div class="sidenav">
+            
+      <ul class="list-group">
+        <li class="list-group-heading">我的学习</li>
+        <li class="list-group-item  active ">
+          <a href="/my/courses/learning">我的课程</a>
+        </li>
+
+
+          <li class="list-group-item ">
+            <a href="/my/classrooms">我的mooc</a>
+          </li>
+
+
+        
+        <li class="list-group-item
+        " >
+          <a href="/my/questions">我的问答</a>
+        </li>
+        <li class="list-group-item
+        ">
+          <a href="/my/discussions">我的话题</a>
+        </li>
+        <li class="list-group-item
+        ">
+          <a href="/my/notebooks">我的笔记</a>
+        </li>
+
+        
+        <li class="list-group-item
+        " >
+          <a href="/my/quiz">我的考试</a>
+        </li>
+        <li class="list-group-item
+        ">
+          <a href="/my/group">我的小组</a>
+        </li>
+              </ul>
+    </div>
+  </div>
+  <div class="col-md-9">	<div class="panel panel-default panel-col">
+	  <div class="panel-heading">我的课程</div>
+	  <div class="panel-body">
+  		  	 <ul class="nav nav-pills">
+	<li class="active"><a href="/my/courses/learning">学习中</a></li>
+	<li><a href="/my/courses/learned">已学完</a></li>
+	<li><a href="/my/courses/favorited">收藏</a></li>
+</ul>	  	 		     <style>
+.classroomPicture{
+
+  width: 24px;
+  height: 24px;
+}
+</style>
+<ul class="course-grids">
+      <li class="course-grid">
+      <a href="/course/27" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">JS入门/基本语法和属性（免费）</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+      <li class="course-grid">
+      <a href="/course/79" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">JS第十九章-网易严选（项目实战）</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 51%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+      <li class="course-grid">
+      <a href="/course/48" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">canvas气泡+扇形导航</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+      <li class="course-grid">
+      <a href="/course/47" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">炫酷照片墙</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+      <li class="course-grid">
+      <a href="/course/45" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">JS第十八章- Node.js</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 52%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+      <li class="course-grid">
+      <a href="/course/34" class="grid-body">
+        <img src="../assets/temp/img/18593357cda6239198.jpg"  class="img-responsive thumb">
+                                              <span class="label label-warning series-mode-label">已完结</span>
+                                
+        <span class="title">JS第十章-面向对象</span>
+        
+        
+                  <div class="learn-status">
+              <div class="mbm">
+                            </div>
+
+
+
+                          <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 87%;"></div>
+              </div>
+              <div class="action"><span class="btn btn-primary btn-sm">继续学习</span></div>
+                      </div>
+                  
+        
+      </a>
+    </li>
+  </ul>
+				  
+		  	  </div>
+	</div>
+
+</div>
+</div>
+
+      </div>
+      
+              
+                   <div class="es-footer-link">
+  <div class="container">
+    <div class="row">
+      
+<div class="col-md-8 footer-main clearfix">
+    <div class="link-item ">
+    <h3>Students</h3>
+    <ul>
+                <li>
+            <a href="/course/27/lesson/list" target="_self">试听课程</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item ">
+    <h3>Teacher</h3>
+    <ul>
+                <li>
+            <a href="/user/19/about" target="_self">讲师简介</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item ">
+    <h3>News</h3>
+    <ul>
+                <li>
+            <a href="/article" target="_self">资讯频道</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item hidden-xs">
+    <h3>How</h3>
+    <ul>
+                <li>
+            <a href="/article/61" target="_self">公开课</a>
+        </li>
+            </ul>
+</div>
+ <div class="link-item hidden-xs">
+    <h3>Questions</h3>
+    <ul>
+                <li>
+            <a href="/article/11" target="_self">常见问题</a>
+        </li>
+            </ul>
+</div>
+
+</div>
+
+<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+  <a class="" href="http://www.apeclass.cn" target="_self">
+    <img src="../assets/temp/img/block_picture_1469698303.png" alt="建议图片大小为233*64">
+  </a>
+  <div class="footer-sns">
+    <a class="qrcode-popover top">
+      <i class="es-icon es-icon-weixin"></i>
+      <div class="qrcode-content">
+        <img src="../assets/temp/img/block_picture_1469698303.png" alt="">
+      </div>
+    </a>
+    <a style="display:none;" class="qrcode-popover top">
+      <i class="es-icon es-icon-android"></i>
+      <div class="qrcode-content">
+        <img src="../assets/temp/img/android.png" alt="">
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</div>     
+<footer class="es-footer footer-test">
+    <div class="copyright">
+        <div class="container">
+            <div class="mts">
+                 课程内容版权均归
+                <a href="/">
+            北京海棠优学教育科技有限公司
+          </a>
+                所有                  <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+            京ICP备16058256号-1
+          </a>
+                            </div>
+        </div>
+    </div>
+</footer>    
+      </div>
+
+        
+        
+  <div id="login-modal" class="modal" data-url="/login/ajax"></div>
+  <div id="modal" class="modal"></div>
+  
+
+</body>
+<script src="../assets/libs/headroom/Headroom.js"></script>
+<script src="../assets/libs/headroom/jQuery.headroom.js"></script>
+<script src="../assets/libs/wow.js"></script>
+<script src="../assets/libs/jquery-browser.js"></script>
+<script src="../assets/libs/jquery.corner.js"></script>
+<script src="../assets/libs/jquery.roundabout.js"></script>
+<script src="../assets/libs/jquery.roundabout-shapes.js"></script>
+<script src="../assets/libs/ht-pages.js"></script>
+</html>
